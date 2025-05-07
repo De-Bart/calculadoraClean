@@ -1,0 +1,50 @@
+.calculadora {
+            width: 300px;
+            margin: 50px auto;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            overflow: hidden;
+	    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .display {
+            background-color: #f0f0f0;
+            padding: 20px;
+            text-align: right;
+        }
+
+        .display input {
+            width: 100%;
+            padding: 10px;
+            font-size: 20px;
+            border: none;
+            background-color: transparent;
+            text-align: right;
+        }
+
+        .botoes {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+        }
+
+        .botoes button {
+            padding: 20px;
+            font-size: 18px;
+            border: 1px solid #ddd;
+	        border-radius: 5px;
+            background-color: #eee;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .botoes button:hover {
+            background-color: #ddd;
+        }
+
+        .botoes button:last-child {
+            grid-column: span 4; /* O botão de igual (=) */
+        }
+	
+	    .botoes button:nth-child(17) {
+	    grid-row: span 2;
+	    }
